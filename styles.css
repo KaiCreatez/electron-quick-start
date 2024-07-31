@@ -1,3 +1,60 @@
-/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #584646;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.features, .cta {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.features h2, .cta h2 {
+    color: #333;
+}
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+.features li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.cta {
+    text-align: center;
+}
 
-/* Add styles here to customize the appearance of your app */
+.image-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.cta a:hover {
+    background-color: #555;
+}
