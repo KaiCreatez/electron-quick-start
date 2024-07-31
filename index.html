@@ -1,19 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shotlist - Elevate Your Filmmaking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .features, .cta {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .features h2, .cta h2 {
+            color: #333;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .cta {
+            text-align: center;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .cta a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shotlist</h1>
+        <p>Elevate Your Filmmaking</p>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <h2>Transform Your Filmmaking</h2>
+            <p>Shotlist is your ultimate storyline and organization tool, designed to streamline your creative process and enhance your storytelling.</p>
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Streamline your creative process with AI-generated story blocks</li>
+                <li>User-friendly interface for mobile, PC, and Mac</li>
+                <li>Vertical timeline for easy navigation on mobile</li>
+                <li>Customizable project settings for tailored suggestions</li>
+                <li>Simple footage management with drag-and-drop functionality</li>
+                <li>Free access with essential features</li>
+                <li>Paid access unlocks advanced options for pros</li>
+            </ul>
+        </section>
+        <section class="cta">
+            <h2>Join the Shotlist Community</h2>
+            <p>Get started for free and discover how Shotlist can elevate your filmmaking.</p>
+            <a href="#">Get Started Today</a>
+        </section>
+    </div>
+</body>
 </html>
